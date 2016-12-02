@@ -1,6 +1,6 @@
 # VeloxDownloader
 
-A simple,elegant,customizable yet powerfull all in one solution for downloading files in your Swift project. 
+A simple,elegant,customizable yet powerfull all in one solution for downloading files in your Swift(3) project. 
 
 See it in action:
 
