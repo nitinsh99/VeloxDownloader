@@ -11,3 +11,9 @@ Please create an issue:
 1. If you think Velox Downloader is awesome and you used it in your project.
 2. If you have a feature request.
 3. If you found a bug. Feel free to fix it and submit the pull request if you would like to contribute.
+
+
+Coming Soon:
+
+1. How to use.
+2. Cocoapod
