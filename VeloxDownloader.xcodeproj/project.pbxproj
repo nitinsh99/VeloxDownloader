@@ -76,20 +76,20 @@
 		9F2FF80E1DECB99600D4CFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2FF8101DECB99600D4CFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2FF8131DECB99600D4CFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F2FF8151DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2FF8151DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = VeloxDownloader/Info.plist; sourceTree = SOURCE_ROOT; };
 		9F2FF81A1DECB99600D4CFB9 /* VeloxDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeloxDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2FF81E1DECB99600D4CFB9 /* VeloxDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderTests.swift; sourceTree = "<group>"; };
 		9F2FF8201DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F2FF8251DECB99600D4CFB9 /* VeloxDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeloxDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2FF8291DECB99600D4CFB9 /* VeloxDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderUITests.swift; sourceTree = "<group>"; };
 		9F2FF82B1DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F2FF8371DECBAC700D4CFB9 /* VeloxDownloadInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadInstance.swift; path = ../VeloxDownloadInstance.swift; sourceTree = "<group>"; };
-		9F2FF8391DECC14700D4CFB9 /* VeloxDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadManager.swift; path = ../VeloxDownloadManager.swift; sourceTree = "<group>"; };
-		9F8B460D1DEF73AF007E094A /* VeloxCacheManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxCacheManagement.swift; sourceTree = "<group>"; };
-		9F8B46131DF0B358007E094A /* VeloxProgressiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxProgressiveCell.swift; sourceTree = "<group>"; };
-		9F8B46141DF0B358007E094A /* VeloxProgressiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VeloxProgressiveCell.xib; sourceTree = "<group>"; };
-		9F8B46211DF1E453007E094A /* VeloxDownloaderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderList.swift; sourceTree = SOURCE_ROOT; };
-		9F8B46221DF1E453007E094A /* VeloxDownloaderList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VeloxDownloaderList.xib; sourceTree = SOURCE_ROOT; };
+		9F2FF8371DECBAC700D4CFB9 /* VeloxDownloadInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadInstance.swift; path = SourceFiles/VeloxDownloadInstance.swift; sourceTree = "<group>"; };
+		9F2FF8391DECC14700D4CFB9 /* VeloxDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadManager.swift; path = SourceFiles/VeloxDownloadManager.swift; sourceTree = "<group>"; };
+		9F8B460D1DEF73AF007E094A /* VeloxCacheManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxCacheManagement.swift; path = SourceFiles/VeloxCacheManagement.swift; sourceTree = "<group>"; };
+		9F8B46131DF0B358007E094A /* VeloxProgressiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxProgressiveCell.swift; path = SourceFiles/VeloxProgressiveCell.swift; sourceTree = "<group>"; };
+		9F8B46141DF0B358007E094A /* VeloxProgressiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VeloxProgressiveCell.xib; path = SourceFiles/VeloxProgressiveCell.xib; sourceTree = "<group>"; };
+		9F8B46211DF1E453007E094A /* VeloxDownloaderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloaderList.swift; path = VeloxDownloader/SourceFiles/VeloxDownloaderList.swift; sourceTree = SOURCE_ROOT; };
+		9F8B46221DF1E453007E094A /* VeloxDownloaderList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VeloxDownloaderList.xib; path = VeloxDownloader/SourceFiles/VeloxDownloaderList.xib; sourceTree = SOURCE_ROOT; };
 		9F8B462A1DF3B186007E094A /* VeloxDownlaoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VeloxDownlaoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8B46321DF3B186007E094A /* VeloxDownlaoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeloxDownlaoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8B46391DF3B186007E094A /* VeloxDownlaoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloxDownlaoderTests.swift; sourceTree = "<group>"; };
@@ -816,6 +816,7 @@
 				9F8B46421DF3B186007E094A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F8B46471DF3B186007E094A /* Build configuration list for PBXNativeTarget "VeloxDownlaoderTests" */ = {
 			isa = XCConfigurationList;
@@ -824,6 +825,7 @@
 				9F8B46441DF3B186007E094A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
