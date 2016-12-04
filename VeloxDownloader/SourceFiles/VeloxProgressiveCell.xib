@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="424" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="424" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="424" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <progressView opaque="NO" clipsSubviews="YES" tag="200" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-XB-w6w">
@@ -25,44 +25,43 @@
                         <color key="progressTintColor" red="0.18024595828184575" green="0.72336632013320923" blue="0.11221942243553322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </progressView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdx-t9-4nj">
-                        <rect key="frame" x="368" y="8" width="48" height="44"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="48" id="df3-h1-FG5"/>
-                        </constraints>
-                        <state key="normal" image="stop"/>
-                        <connections>
-                            <action selector="stopButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lqA-ju-yQM"/>
-                        </connections>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCp-et-Zs1">
-                        <rect key="frame" x="8" y="16" width="53" height="29"/>
+                        <rect key="frame" x="8" y="18" width="53" height="27"/>
                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwF-uQ-7za">
+                        <rect key="frame" x="341" y="17" width="75" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="V7C-lT-UvJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="STOP"/>
+                        <connections>
+                            <action selector="stopButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RP1-10-YOj"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Cxm-XB-w6w" secondAttribute="trailing" id="2hI-GN-L5L"/>
-                    <constraint firstItem="lCp-et-Zs1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="4Qc-RK-5ka"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Cxm-XB-w6w" secondAttribute="bottom" constant="13" id="FS7-5Z-wBf"/>
-                    <constraint firstItem="Pdx-t9-4nj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="LSA-gF-l0f"/>
-                    <constraint firstItem="lCp-et-Zs1" firstAttribute="centerY" secondItem="Pdx-t9-4nj" secondAttribute="centerY" id="Xaq-zl-Agn"/>
-                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lle-yM-8Pg"/>
-                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="top" secondItem="Pdx-t9-4nj" secondAttribute="bottom" constant="14" id="oNs-1f-MVZ"/>
-                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="top" secondItem="lCp-et-Zs1" secondAttribute="bottom" constant="21" id="sdx-cv-sPw"/>
-                    <constraint firstItem="Pdx-t9-4nj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tX2-FX-by2"/>
+                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CRU-5p-emH"/>
+                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="top" secondItem="lCp-et-Zs1" secondAttribute="bottom" constant="21" id="Lsx-Mg-Sqx"/>
+                    <constraint firstItem="nwF-uQ-7za" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="MvI-Nm-2Hs"/>
+                    <constraint firstAttribute="trailing" secondItem="Cxm-XB-w6w" secondAttribute="trailing" id="YwJ-wS-C5a"/>
+                    <constraint firstItem="Cxm-XB-w6w" firstAttribute="top" secondItem="nwF-uQ-7za" secondAttribute="bottom" constant="19" id="cc9-Yz-JKN"/>
+                    <constraint firstItem="lCp-et-Zs1" firstAttribute="centerY" secondItem="nwF-uQ-7za" secondAttribute="centerY" id="fz3-Zf-FEa"/>
+                    <constraint firstItem="nwF-uQ-7za" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="gPc-Ka-u3Q"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Cxm-XB-w6w" secondAttribute="bottom" constant="13.666666666666671" id="iof-BC-Ewv"/>
+                    <constraint firstItem="lCp-et-Zs1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ztD-KW-2fo"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cancelButton" destination="Pdx-t9-4nj" id="Ywh-J7-4IG"/>
+                <outlet property="cancelButton" destination="nwF-uQ-7za" id="FEh-wh-Wsh"/>
                 <outlet property="fileName" destination="lCp-et-Zs1" id="FfN-XC-0bc"/>
                 <outlet property="progressBar" destination="Cxm-XB-w6w" id="4lV-nY-TeJ"/>
             </connections>
             <point key="canvasLocation" x="-407" y="-366"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="stop" width="50" height="50"/>
-    </resources>
 </document>
