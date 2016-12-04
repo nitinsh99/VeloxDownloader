@@ -52,6 +52,8 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
         {
             downloadListArray.remove(at: indexToBeRemoved)
             VeloxDownloadManager.downloadInstanceDictionary!.removeValue(forKey: downloadInstance.filename)
+            downloadInstance.downloadStatusClosure!(true)
+
         }
         DispatchQueue.main.async {
             self.downloadListTableView.reloadData()
@@ -113,11 +115,30 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
                 cellProgressBar.progress = Float(progress)
             }
             let remainingTimeClosure: (CGFloat) -> () = { (remainingTime) in
-                
+                print("Remaining Time is : \(remainingTime)")
+
                 
             }
             let completionClosure: (Bool) -> () = { (completion) in
-                
+                print("is Download completed : \(completion)")
+                if(completion)
+                {
+                    do
+                    {
+                        let cachesDirectoryURLPath = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0])
+                        
+                        let dir = try FileManager.default.contentsOfDirectory(atPath: cachesDirectoryURLPath.path)
+                        for file in dir
+                        {
+                            print("file is : \(file)")
+                        }
+                    }
+                    catch let error as NSError
+                    {
+                        print("error occured while trying to read cache dir \(error.localizedDescription)")
+                    }
+                }
+
             }
             downloadItem.currentProgressClosure = progressClosure
             downloadItem.remainingTimeClosure = remainingTimeClosure

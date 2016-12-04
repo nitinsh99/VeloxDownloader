@@ -64,17 +64,105 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
   IBAction func downloadClicked(_ sender: Any) {
         let veloxDownloader = VeloxDownloadManager.sharedInstance
 
-        let urlString = "http://download.thinkbroadband.com/10MB.zip"
+        let urlString = "URL OF YOUR FILE"
         let url = URL(string: urlString)
  
-        veloxDownloader.downloadFileWithVeloxDownloader(withURL: url!, name: url!.lastPathComponent, directoryName: nil, friendlyName: nil, backgroundingMode: false)
-        
+        veloxDownloader.downloadFileWithVeloxDownloader(
+        withURL: url!, 
+        name: url!.lastPathComponent,
+        directoryName: nil, 
+        friendlyName: nil, 
+        backgroundingMode: false)        
     }
  ```
   
- * With BackGrounding: Simple pass true in the  ```backgroundingMode``` parameter of the above method.
+ * With BackGrounding: Simply pass true in the  ```backgroundingMode``` parameter of the above method.
 
  ```
-veloxDownloader.downloadFileWithVeloxDownloader(withURL: url!, name: url!.lastPathComponent, directoryName: nil, friendlyName: nil, backgroundingMode: true)
+veloxDownloader.downloadFileWithVeloxDownloader(
+withURL: url!, 
+name: url!.lastPathComponent, 
+directoryName: nil, 
+friendlyName: nil, 
+backgroundingMode: true)
  ```
     
+* __Using VeloxDownloader without Velox downloading UI__:
+  * If you are interested in building your own UI to show and track the progress of your downloads, than you can use the following closure syntax to do just that. Obvisiouly, with this mode you don't have to worry about setting the VeloxDownloader UI as we did above in viewDidLoad() method.
+
+ ```
+ @IBAction func downloadClicked(_ sender: Any) {
+        let veloxDownloader = VeloxDownloadManager.sharedInstance
+       
+        let urlString = "URL OF YOUR FILE"
+        let url = URL(string: urlString)
+ 
+        let progressClosure : (CGFloat,VeloxDownloadInstance) -> (Void)
+        let remainingTimeClosure : (CGFloat) -> Void
+        let completionClosure : (Bool) -> Void
+
+        
+        progressClosure = {(progress,downloadInstace) in           
+        print("Progress of File : \(downloadInstace.filename) is \(Float(progress))")        
+        }
+           
+        remainingTimeClosure = {(timeRemaning) in          
+            print("Remaining Time is : \(timeRemaning)")
+        }
+        
+        completionClosure = {(status) in
+            print("is Download completed : \(status)")
+        }
+        
+        
+        veloxDownloader.downloadFile(
+        withURL: url!, 
+        name: url!.lastPathComponent, 
+        directoryName: nil, 
+        friendlyName: nil, 
+        progressClosure: progressClosure, 
+        remainigtTimeClosure: remainingTimeClosure, 
+        completionClosure: completionClosure, 
+        backgroundingMode: false)       
+    }
+  ```
+ * With BackGrounding: Simply pass true in the  ```backgroundingMode``` parameter of the above method.
+
+##How can I retrieve the downloaded files:
+* All the downloaded files are first downloaded in the temporary directory and post completion they are moved to the default cache directory of your application. 
+* You have to manually retrieve the files from your cache diretory before the application is closed. You can use following code to scan you application cache directory:
+  
+  ```
+      do{
+         let cachesDirectoryURLPath = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0])
+                        
+         let dir = try FileManager.default.contentsOfDirectory(atPath: cachesDirectoryURLPath.path)
+         for file in dir{
+         print("file is : \(file)")
+          }
+         }
+         catch let error as NSError{
+         print("error occured while trying to read cache dir \(error.localizedDescription)")
+         }
+  ```
+
+* VeloxDownloader clears out the temporary directory on every launch to avoid any file naming conflict and preseve system space.
+* Also, if there is already a file present in the cache directory, VeloxDownloader removes the files and replaces the file.
+* If download is stopped in the middle for a file than VeloxDownloader removes the file traces from the temp and cache directory.
+
+##Contribution:
+* Please STAR the project or mention your project name in this [issue](https://github.com/nitinsh99/VeloxDownloader/issues/15) if you are feeling lucky.
+* Create a seperate issue if you found a bug for if you have a feature request.
+* You are welcome to submit a pull reqeust if you fixed a bug.
+
+##What's cooking:
+* I will be working on VeloxDowloading UI to add more features like play, pause, resume.
+* I will be working on improving the VeloxDownloading UI to make it more asthetic.
+* I will be working on improving the file management classes to give more flexibility on saving the downloaded files preferably by tying it up wiht SQLLite and/or CoreDate
+* I will be working on creating a UI extenstion for file management that will make it easier to navigate and control through the list of downloaded files.
+* More work on general notifications while the backgrounding is enabled.
+
+##Credits:
+* Thanks to awesome people behind [Cocoapods](https://cocoapods.org/about)
+* I took insipration from [this](https://github.com/chasseurmic/TWRDownloadManager) downloading library written for Obj-C to make VeloxDownloader.
+

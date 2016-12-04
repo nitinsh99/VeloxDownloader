@@ -268,7 +268,7 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
 
                 }
                 try  FileManager.default.moveItem(at: location, to: destinationLocation)
-
+                dowloadInstace?.downloadStatusClosure!(true)
             }
             catch let error as NSError
             {
