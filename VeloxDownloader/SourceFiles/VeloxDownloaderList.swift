@@ -86,7 +86,12 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
         let cell : UITableViewCell
         //cell = downloadListTableView.dequeueReusableCell(withIdentifier: "cell")!
         
-        cell = Bundle.main.loadNibNamed("VeloxProgressiveCell", owner: self, options: nil)?.first as! VeloxProgressiveCell
+        let bundle  = Bundle(for: VeloxProgressiveCell.self)
+        
+        
+//        cell = Bundle.main.loadNibNamed("VeloxProgressiveCell", owner: self, options: nil)?.first as! VeloxProgressiveCell
+//        
+          cell = bundle.loadNibNamed("VeloxProgressiveCell", owner: self, options: nil)?.first as! VeloxProgressiveCell
         
         let cellLabel : UILabel
         let cellProgressBar : UIProgressView
