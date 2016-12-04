@@ -1,16 +1,16 @@
 #VeloxDownloader
 
-##About:
+##About: 
 VeloxDownloader is an easy to use,elegant, native yet powerfull download library made with Swift 3. It abstracts all the complex implementations of urlsession and download tasks and provide a "one-click" API which enables you to download the files from the internet.
 
 It's asyncronous, fast, maintainable, highly customizable, has backgrounding capabilities and  provides In-built GUI to show and control the download progress of your files.
 
 
-##See it in Action:
+##See it in Action: 📹
 
 ![VeloxDownloader Demo](https://cloud.githubusercontent.com/assets/1389212/20846414/7fc1b224-b897-11e6-99c7-2a5a4e9cca40.gif)
 
-##What can it do?
+##What can it do? 💪🏼
 * It has following modes:
 	* With UI:
 		* As seen from above demo VeloxDownloader comes with an in built downloaing View that shows the download progress and currently has the ability to stop any download.
@@ -22,7 +22,7 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
 	   * This API also let you enable or disable the background downloading for any specific file download.
 
 	   
-##Usage:
+##Usage: 💻
 
 * __Installation__ : 
 
@@ -128,7 +128,7 @@ backgroundingMode: true)
   ```
  * With BackGrounding: Simply pass true in the  ```backgroundingMode``` parameter of the above method.
 
-##How can I retrieve the downloaded files:
+##How can I retrieve the downloaded files: 🗂
 * All the downloaded files are first downloaded in the temporary directory and post completion they are moved to the default cache directory of your application. 
 * You have to manually retrieve the files from your cache diretory before the application is closed. You can use following code to scan you application cache directory:
   
@@ -150,19 +150,22 @@ backgroundingMode: true)
 * Also, if there is already a file present in the cache directory, VeloxDownloader removes the files and replaces the file.
 * If download is stopped in the middle for a file than VeloxDownloader removes the file traces from the temp and cache directory.
 
-##Contribution:
+##Contribution: ❤️
 * Please STAR the project or mention your project name in this [issue](https://github.com/nitinsh99/VeloxDownloader/issues/15) if you are feeling lucky.
 * Create a seperate issue if you found a bug for if you have a feature request.
 * You are welcome to submit a pull reqeust if you fixed a bug.
 
-##What's cooking:
+##What's cooking: 🍲
 * I will be working on VeloxDowloading UI to add more features like play, pause, resume.
 * I will be working on improving the VeloxDownloading UI to make it more asthetic.
 * I will be working on improving the file management classes to give more flexibility on saving the downloaded files preferably by tying it up wiht SQLLite and/or CoreDate
 * I will be working on creating a UI extenstion for file management that will make it easier to navigate and control through the list of downloaded files.
 * More work on general notifications while the backgrounding is enabled.
 
-##Credits:
+##Credits: 🙏🏼
 * Thanks to awesome people behind [Cocoapods](https://cocoapods.org/about)
 * I took insipration from [this](https://github.com/chasseurmic/TWRDownloadManager) downloading library written for Obj-C to make VeloxDownloader.
+
+
+##[License](https://github.com/nitinsh99/VeloxDownloader/blob/master/LICENSE)
 
