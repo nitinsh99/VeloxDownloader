@@ -21,15 +21,15 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
 
 {
     
-    var currentDownloads : Array<String>?
-    var backgroundTransferCompletionHandler :( () -> ())?
-    var session : URLSession?
-    var backgroundSession : URLSession?
-    static var downloadInstanceDictionary : Dictionary<String, VeloxDownloadInstance>?
+   public var currentDownloads : Array<String>?
+   public var backgroundTransferCompletionHandler :( () -> ())?
+   public var session : URLSession?
+   public var backgroundSession : URLSession?
+   public  static var downloadInstanceDictionary : Dictionary<String, VeloxDownloadInstance>?
     
-    var delegate : DownloadManagerDelegate?
+    public var delegate : DownloadManagerDelegate?
     
-    static let sharedInstance = VeloxDownloadManager()
+    public static let sharedInstance = VeloxDownloadManager()
     
     override private init() {
         
@@ -46,7 +46,7 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
     }
     
     
-    func downloadFileWithVeloxDownloader(
+   public func downloadFileWithVeloxDownloader(
         withURL: URL,
         name : String,
         directoryName:String?,
@@ -123,7 +123,7 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
 
     }
     
-    func downloadFile(
+   public func downloadFile(
         withURL: URL,
         name : String,
         directoryName:String?,
@@ -284,7 +284,7 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
 
 
     
-    func remainingTimeForDownload(downloadInstace : VeloxDownloadInstance, totalBytesTransferred : Int64,totalBytesExpectedToWrite : Int64) -> CGFloat {
+    public func remainingTimeForDownload(downloadInstace : VeloxDownloadInstance, totalBytesTransferred : Int64,totalBytesExpectedToWrite : Int64) -> CGFloat {
         
         let timeInterval : TimeInterval  = Date().timeIntervalSince(downloadInstace.downloadDate)
         

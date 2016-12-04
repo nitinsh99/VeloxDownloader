@@ -13,23 +13,23 @@ import CoreGraphics
 public class VeloxDownloadInstance : NSObject
 {
     
-    typealias remainingDownloadTime = ((CGFloat) -> (Void))?
-    typealias currentProgressStat = ((CGFloat,VeloxDownloadInstance) -> (Void))?
-    typealias isDownloadCompleted = ((Bool) -> (Void))?
+   public typealias remainingDownloadTime = ((CGFloat) -> (Void))?
+   public typealias currentProgressStat = ((CGFloat,VeloxDownloadInstance) -> (Void))?
+   public typealias isDownloadCompleted = ((Bool) -> (Void))?
     
     
-    var remainingTimeClosure : remainingDownloadTime
-    var currentProgressClosure : currentProgressStat
-    var downloadStatusClosure : isDownloadCompleted
+    public var remainingTimeClosure : remainingDownloadTime
+    public var currentProgressClosure : currentProgressStat
+    public var downloadStatusClosure : isDownloadCompleted
     
-    var downloadTask : URLSessionDownloadTask
-    var filename : String
-    var friendlyName : String
-    var filePath : String
-    var downloadDate : Date
+    public var downloadTask : URLSessionDownloadTask
+    public var filename : String
+    public var friendlyName : String
+    public var filePath : String
+    public var downloadDate : Date
     
     
-    init(withDownloadTask : URLSessionDownloadTask, remainingTime :  remainingDownloadTime , progess :  currentProgressStat, status :  isDownloadCompleted,  name :  String, friendlyName :  String, path :  String, date :  Date ) {
+    public init(withDownloadTask : URLSessionDownloadTask, remainingTime :  remainingDownloadTime , progess :  currentProgressStat, status :  isDownloadCompleted,  name :  String, friendlyName :  String, path :  String, date :  Date ) {
         
         
             self.downloadTask = withDownloadTask

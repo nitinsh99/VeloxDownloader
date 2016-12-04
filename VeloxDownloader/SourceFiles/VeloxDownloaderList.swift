@@ -12,7 +12,7 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
     
     @IBOutlet weak var downloadListTableView: UITableView!
     
-    var downloadListArray = [VeloxDownloadInstance]()
+    public var downloadListArray = [VeloxDownloadInstance]()
     override public func viewDidLoad() {
         super.viewDidLoad()
         downloadListTableView.tableFooterView = UIView()
