@@ -10,7 +10,7 @@ import Foundation
 import CoreGraphics
 
 
-class VeloxDownloadInstance : NSObject
+public class VeloxDownloadInstance : NSObject
 {
     
     typealias remainingDownloadTime = ((CGFloat) -> (Void))?

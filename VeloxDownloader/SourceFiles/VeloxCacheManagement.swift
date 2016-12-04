@@ -9,7 +9,7 @@
 import Foundation
 import CoreGraphics
 
-class VeloxCacheManagement
+public class VeloxCacheManagement
 {
     
     

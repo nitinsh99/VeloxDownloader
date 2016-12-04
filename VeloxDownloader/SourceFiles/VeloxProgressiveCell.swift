@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class VeloxProgressiveCell: UITableViewCell {
+public class VeloxProgressiveCell: UITableViewCell {
 
     
     @IBOutlet weak var progressBar: UIProgressView!
@@ -25,7 +25,7 @@ class VeloxProgressiveCell: UITableViewCell {
     
     @IBOutlet weak var cancelButton: UIButton!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
@@ -54,7 +54,7 @@ class VeloxProgressiveCell: UITableViewCell {
     }
     
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

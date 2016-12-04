@@ -8,12 +8,12 @@
 
 import UIKit
 
-class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataSource,DownloadManagerDelegate {
+public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataSource,DownloadManagerDelegate {
     
     @IBOutlet weak var downloadListTableView: UITableView!
     
     var downloadListArray = [VeloxDownloadInstance]()
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         downloadListTableView.tableFooterView = UIView()
         
@@ -28,14 +28,14 @@ class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataS
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
     
-    func downloadItemAdded(downloadInstance: VeloxDownloadInstance) {
+    public func downloadItemAdded(downloadInstance: VeloxDownloadInstance) {
         print("received a callback saying that download item has been added \(downloadInstance.downloadTask.taskIdentifier)")
         downloadListArray.append(downloadInstance)
         DispatchQueue.main.async {
@@ -43,7 +43,7 @@ class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataS
             
         }    }
     
-    func downloadItemRemoved(downloadInstance: VeloxDownloadInstance) {
+    public func downloadItemRemoved(downloadInstance: VeloxDownloadInstance) {
         
         
         
@@ -81,7 +81,7 @@ class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataS
         
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : UITableViewCell
         //cell = downloadListTableView.dequeueReusableCell(withIdentifier: "cell")!
@@ -128,17 +128,17 @@ class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return (downloadListArray.count)
         
