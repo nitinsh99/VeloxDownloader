@@ -10,15 +10,15 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
     
-    @IBOutlet weak var progressBar2: UIProgressView!
-    @IBOutlet weak var progressBar1: UIProgressView!
+    weak var progressBar2: UIProgressView!
+    weak var progressBar1: UIProgressView!
     
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    weak var scrollView: UIScrollView!
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     
    
-    @IBAction func nativeDownloadingRequested(_ sender: Any) {
+    func nativeDownloadingRequested(_ sender: Any) {
         
         let downloader1 = VeloxDownloadManager.sharedInstance
         let url = "http://download.thinkbroadband.com/1MB.zip"
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     
     
        
-    @IBAction func veloxDownloadingRequested(_ sender: Any) {
+    func veloxDownloadingRequested(_ sender: Any) {
     
     
         let downloader2 = VeloxDownloadManager.sharedInstance
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     }
    
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

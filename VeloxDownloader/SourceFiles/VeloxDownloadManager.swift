@@ -11,13 +11,13 @@ import CoreGraphics
 import UserNotifications
 
 
-protocol DownloadManagerDelegate {
+public protocol DownloadManagerDelegate {
     func downloadItemAdded(downloadInstance : VeloxDownloadInstance)
     func downloadItemRemoved(downloadInstance : VeloxDownloadInstance)
 
 }
 
-class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownloadDelegate,UNUserNotificationCenterDelegate
+public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownloadDelegate,UNUserNotificationCenterDelegate
 
 {
     
@@ -204,7 +204,7 @@ class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownloadDeleg
     
     //MARK : Session
     
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+    public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         
         
         //print("data written \(totalBytesWritten)")
@@ -226,7 +226,7 @@ class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownloadDeleg
         }
     }
     
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+    public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         
         
         
@@ -302,7 +302,7 @@ class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownloadDeleg
   
     //MARK : Finish Session
     
-    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+    public func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
         session.getAllTasks { (taskArray) in
             if(taskArray.count == 0)
             {
