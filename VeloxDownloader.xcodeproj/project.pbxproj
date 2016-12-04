@@ -14,6 +14,13 @@
 		9F2FF8141DECB99600D4CFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2FF8121DECB99600D4CFB9 /* LaunchScreen.storyboard */; };
 		9F2FF81F1DECB99600D4CFB9 /* VeloxDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FF81E1DECB99600D4CFB9 /* VeloxDownloaderTests.swift */; };
 		9F2FF82A1DECB99600D4CFB9 /* VeloxDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FF8291DECB99600D4CFB9 /* VeloxDownloaderUITests.swift */; };
+		9F2FF8381DECBAC700D4CFB9 /* VeloxDownloadInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FF8371DECBAC700D4CFB9 /* VeloxDownloadInstance.swift */; };
+		9F2FF83A1DECC14700D4CFB9 /* VeloxDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FF8391DECC14700D4CFB9 /* VeloxDownloadManager.swift */; };
+		9F8B460E1DEF73AF007E094A /* VeloxCacheManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B460D1DEF73AF007E094A /* VeloxCacheManagement.swift */; };
+		9F8B46151DF0B358007E094A /* VeloxProgressiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B46131DF0B358007E094A /* VeloxProgressiveCell.swift */; };
+		9F8B46161DF0B358007E094A /* VeloxProgressiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B46141DF0B358007E094A /* VeloxProgressiveCell.xib */; };
+		9F8B46231DF1E453007E094A /* VeloxDownloaderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B46211DF1E453007E094A /* VeloxDownloaderList.swift */; };
+		9F8B46241DF1E453007E094A /* VeloxDownloaderList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B46221DF1E453007E094A /* VeloxDownloaderList.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		9F2FF8251DECB99600D4CFB9 /* VeloxDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeloxDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2FF8291DECB99600D4CFB9 /* VeloxDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderUITests.swift; sourceTree = "<group>"; };
 		9F2FF82B1DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2FF8371DECBAC700D4CFB9 /* VeloxDownloadInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadInstance.swift; path = ../VeloxDownloadInstance.swift; sourceTree = "<group>"; };
+		9F2FF8391DECC14700D4CFB9 /* VeloxDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VeloxDownloadManager.swift; path = ../VeloxDownloadManager.swift; sourceTree = "<group>"; };
+		9F8B460D1DEF73AF007E094A /* VeloxCacheManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxCacheManagement.swift; sourceTree = "<group>"; };
+		9F8B46131DF0B358007E094A /* VeloxProgressiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxProgressiveCell.swift; sourceTree = "<group>"; };
+		9F8B46141DF0B358007E094A /* VeloxProgressiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VeloxProgressiveCell.xib; sourceTree = "<group>"; };
+		9F8B46211DF1E453007E094A /* VeloxDownloaderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderList.swift; sourceTree = SOURCE_ROOT; };
+		9F8B46221DF1E453007E094A /* VeloxDownloaderList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VeloxDownloaderList.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,13 @@
 			children = (
 				9F2FF8091DECB99600D4CFB9 /* AppDelegate.swift */,
 				9F2FF80B1DECB99600D4CFB9 /* ViewController.swift */,
+				9F2FF8371DECBAC700D4CFB9 /* VeloxDownloadInstance.swift */,
+				9F8B460D1DEF73AF007E094A /* VeloxCacheManagement.swift */,
+				9F2FF8391DECC14700D4CFB9 /* VeloxDownloadManager.swift */,
+				9F8B46211DF1E453007E094A /* VeloxDownloaderList.swift */,
+				9F8B46131DF0B358007E094A /* VeloxProgressiveCell.swift */,
+				9F8B46141DF0B358007E094A /* VeloxProgressiveCell.xib */,
+				9F8B46221DF1E453007E094A /* VeloxDownloaderList.xib */,
 				9F2FF80D1DECB99600D4CFB9 /* Main.storyboard */,
 				9F2FF8101DECB99600D4CFB9 /* Assets.xcassets */,
 				9F2FF8121DECB99600D4CFB9 /* LaunchScreen.storyboard */,
@@ -195,6 +216,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9R9TQ8V583;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					9F2FF8191DECB99600D4CFB9 = {
 						CreatedOnToolsVersion = 8.1;
@@ -235,8 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8B46161DF0B358007E094A /* VeloxProgressiveCell.xib in Resources */,
 				9F2FF8141DECB99600D4CFB9 /* LaunchScreen.storyboard in Resources */,
 				9F2FF8111DECB99600D4CFB9 /* Assets.xcassets in Resources */,
+				9F8B46241DF1E453007E094A /* VeloxDownloaderList.xib in Resources */,
 				9F2FF80F1DECB99600D4CFB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2FF80C1DECB99600D4CFB9 /* ViewController.swift in Sources */,
+				9F2FF8381DECBAC700D4CFB9 /* VeloxDownloadInstance.swift in Sources */,
+				9F2FF83A1DECC14700D4CFB9 /* VeloxDownloadManager.swift in Sources */,
 				9F2FF80A1DECB99600D4CFB9 /* AppDelegate.swift in Sources */,
+				9F8B46231DF1E453007E094A /* VeloxDownloaderList.swift in Sources */,
+				9F8B46151DF0B358007E094A /* VeloxProgressiveCell.swift in Sources */,
+				9F8B460E1DEF73AF007E094A /* VeloxCacheManagement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9R9TQ8V583;
 				INFOPLIST_FILE = VeloxDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharmanitin.VeloxDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9R9TQ8V583;
 				INFOPLIST_FILE = VeloxDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharmanitin.VeloxDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +549,7 @@
 				9F2FF8301DECB99600D4CFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F2FF8311DECB99600D4CFB9 /* Build configuration list for PBXNativeTarget "VeloxDownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +558,7 @@
 				9F2FF8331DECB99600D4CFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F2FF8341DECB99600D4CFB9 /* Build configuration list for PBXNativeTarget "VeloxDownloaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +567,7 @@
 				9F2FF8361DECB99600D4CFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

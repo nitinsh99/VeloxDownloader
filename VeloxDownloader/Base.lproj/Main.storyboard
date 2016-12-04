@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VeloxDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-LX-lEL">
+                                <rect key="frame" x="411" y="343" width="202" height="30"/>
+                                <state key="normal" title="Velox Download with Velox UI"/>
+                                <connections>
+                                    <action selector="veloxDownloadingRequested:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QhB-Wv-fqy"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6o-nz-KH3">
+                                <rect key="frame" x="0.0" y="435" width="1024" height="333"/>
+                            </scrollView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l51-pa-0tt">
+                                <rect key="frame" x="20" y="196" width="984" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E54-Oy-QiV">
+                                <rect key="frame" x="20" y="137" width="984" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-TV-Rog">
+                                <rect key="frame" x="369" y="63" width="286" height="30"/>
+                                <state key="normal" title="Velox Download with Native Progress Bar "/>
+                                <connections>
+                                    <action selector="nativeDownloadingRequested:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeC-XR-McP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ywY-LX-lEL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="343" id="1zZ-X9-VPr"/>
+                            <constraint firstItem="E54-Oy-QiV" firstAttribute="leading" secondItem="l51-pa-0tt" secondAttribute="leading" id="6xV-Vc-aCP"/>
+                            <constraint firstItem="t6o-nz-KH3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="B5B-Uq-Hpi"/>
+                            <constraint firstItem="ywY-LX-lEL" firstAttribute="centerX" secondItem="t6o-nz-KH3" secondAttribute="centerX" id="DEz-ey-reJ"/>
+                            <constraint firstItem="l51-pa-0tt" firstAttribute="top" secondItem="E54-Oy-QiV" secondAttribute="bottom" constant="57" id="E25-CB-JkY"/>
+                            <constraint firstItem="l51-pa-0tt" firstAttribute="centerX" secondItem="ywY-LX-lEL" secondAttribute="centerX" id="HBO-mt-kqs"/>
+                            <constraint firstItem="t6o-nz-KH3" firstAttribute="top" secondItem="ywY-LX-lEL" secondAttribute="bottom" constant="62" id="Hv5-dr-2Zp"/>
+                            <constraint firstItem="E54-Oy-QiV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KHP-9l-rR1"/>
+                            <constraint firstItem="E54-Oy-QiV" firstAttribute="top" secondItem="kWG-TV-Rog" secondAttribute="bottom" constant="44" id="Qhq-ct-nQQ"/>
+                            <constraint firstItem="kWG-TV-Rog" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="VBt-Js-q5P"/>
+                            <constraint firstItem="kWG-TV-Rog" firstAttribute="centerX" secondItem="E54-Oy-QiV" secondAttribute="centerX" id="ZeD-IL-EC1"/>
+                            <constraint firstItem="E54-Oy-QiV" firstAttribute="trailing" secondItem="l51-pa-0tt" secondAttribute="trailing" id="i96-Wy-cBQ"/>
+                            <constraint firstItem="t6o-nz-KH3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tpY-He-Dur"/>
+                            <constraint firstAttribute="trailing" secondItem="t6o-nz-KH3" secondAttribute="trailing" id="ytd-Dc-jP3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Iar-bI-Bh2"/>
+                    <connections>
+                        <outlet property="progressBar1" destination="E54-Oy-QiV" id="7lW-ZA-ha8"/>
+                        <outlet property="progressBar2" destination="l51-pa-0tt" id="vYy-B4-JkZ"/>
+                        <outlet property="scrollView" destination="t6o-nz-KH3" id="xBO-eQ-i3s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="477.53906249999994" y="77.34375"/>
         </scene>
     </scenes>
 </document>
