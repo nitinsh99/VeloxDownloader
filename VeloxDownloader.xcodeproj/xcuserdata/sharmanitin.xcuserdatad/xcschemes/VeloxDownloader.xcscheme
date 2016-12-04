@@ -48,6 +48,16 @@
                ReferencedContainer = "container:VeloxDownloader.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9F8B46311DF3B186007E094A"
+               BuildableName = "VeloxDownlaoderTests.xctest"
+               BlueprintName = "VeloxDownlaoderTests"
+               ReferencedContainer = "container:VeloxDownloader.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

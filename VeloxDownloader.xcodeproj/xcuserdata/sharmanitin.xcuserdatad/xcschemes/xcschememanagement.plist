@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>VeloxDownlaoder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>VeloxDownloader.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>9F2FF8241DECB99600D4CFB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F8B46291DF3B186007E094A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F8B46311DF3B186007E094A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
