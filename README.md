@@ -8,7 +8,8 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
 
 ##See it in Action: 📹
 
-![VeloxDownloader Demo](https://cloud.githubusercontent.com/assets/1389212/20846414/7fc1b224-b897-11e6-99c7-2a5a4e9cca40.gif)
+<kbd>![VeloxDownloader Demo](https://cloud.githubusercontent.com/assets/1389212/20846414/7fc1b224-b897-11e6-99c7-2a5a4e9cca40.gif)
+</kbd>
 
 ##What can it do? 💪🏼
 * It has following modes:
@@ -26,7 +27,7 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
 
 * __Installation__ : 
 
-  VeloxDownloader can be installed using [CocoaPods](http://cocoadocs.org/docsets/VeloxDownloader/1.3/). Simply put the following line in your PodFile and run ```pod update``` from your terminal.
+  VeloxDownloader can be installed using [CocoaPods](http://cocoadocs.org/docsets/VeloxDownloader/1.4/index.html). Simply put the following line in your PodFile and run ```pod update``` from your terminal.
   
   ``` pod 'VeloxDownloader', :git => 'https://github.com/nitinsh99/VeloxDownloader.git' ```
   
@@ -37,6 +38,13 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
   
   
   ```import VeloxDownloader```
+  
+* __Apple's App Transport Security Settings__:
+
+  Make sure you have **allowed** Allowed Arbitary load in your info.plist for the App Transport Security Settings.
+  
+  <kbd><img width="560" alt="screen shot 2016-12-04 at 5 36 39 pm" src="https://cloud.githubusercontent.com/assets/1389212/20869797/5126b5f6-ba48-11e6-9b9a-c9b5ec51ea3c.png"></kbd>
+
   
 * __Using VeloxDownloader with Velox downloading UI__:
   * I recommened using a scroll view to show the downloading files using the VeloxDownloading table view. Just set the VeloxDownloader view to your scroll view like following:

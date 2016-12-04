@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VeloxDownloader"
-  s.version      = "1.1"
+  s.version      = "1.4"
   s.summary      = "File Downloading Library for Swift 3"
 
   # This description is used to generate tags and improve search results.
