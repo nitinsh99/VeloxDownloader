@@ -51,6 +51,7 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
         if let indexToBeRemoved  = downloadListArray.index(of: downloadInstance)
         {
             downloadListArray.remove(at: indexToBeRemoved)
+            VeloxDownloadManager.downloadInstanceDictionary!.removeValue(forKey: downloadInstance.filename)
         }
         DispatchQueue.main.async {
             self.downloadListTableView.reloadData()
@@ -69,6 +70,7 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
                 if let indexToBeRemoved  = downloadListArray.index(of: downloadInstanceToBeRemoved)
                 {
                     downloadListArray.remove(at: indexToBeRemoved)
+                     VeloxDownloadManager.downloadInstanceDictionary!.removeValue(forKey: downloadInstanceToBeRemoved.filename)
                 }
                 DispatchQueue.main.async {
                     downloadInstanceToBeRemoved.downloadTask.cancel()
