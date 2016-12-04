@@ -32,8 +32,10 @@ public class VeloxProgressiveCell: UITableViewCell {
 
  
 
-    
+ 
     @IBAction func stopButtonClicked(_ sender: Any) {
+        
+        
         
         
         cancelButton.isHidden = true

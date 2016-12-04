@@ -280,7 +280,8 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
        //do a local notification
     }
     
- 
+    
+   
 
 
     
@@ -322,7 +323,6 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
     }
     
     
- 
 
 
    
