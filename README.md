@@ -150,6 +150,12 @@ backgroundingMode: true)
 * Also, if there is already a file present in the cache directory, VeloxDownloader removes the files and replaces the file.
 * If download is stopped in the middle for a file than VeloxDownloader removes the file traces from the temp and cache directory.
 
+##Demo: 👏🏼
+Simply clone (or download) this git project and run it using Xcode 8 preferebally on an iOS 10 simulator or device:
+
+```git clone https://github.com/nitinsh99/VeloxDownloader.git```
+
+
 ##Contribution: ❤️
 * Please STAR the project or mention your project name in this [issue](https://github.com/nitinsh99/VeloxDownloader/issues/15) if you are feeling lucky.
 * Create a seperate issue if you found a bug for if you have a feature request.
