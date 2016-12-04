@@ -8,7 +8,8 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
 
 ##See it in Action: 📹
 
-![VeloxDownloader Demo](https://cloud.githubusercontent.com/assets/1389212/20846414/7fc1b224-b897-11e6-99c7-2a5a4e9cca40.gif)
+<kbd>![VeloxDownloader Demo](https://cloud.githubusercontent.com/assets/1389212/20846414/7fc1b224-b897-11e6-99c7-2a5a4e9cca40.gif)
+</kbd>
 
 ##What can it do? 💪🏼
 * It has following modes:
