@@ -76,7 +76,7 @@
 		9F2FF80E1DECB99600D4CFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2FF8101DECB99600D4CFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2FF8131DECB99600D4CFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F2FF8151DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2FF8151DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = VeloxDownloader/Info.plist; sourceTree = SOURCE_ROOT; };
 		9F2FF81A1DECB99600D4CFB9 /* VeloxDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeloxDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2FF81E1DECB99600D4CFB9 /* VeloxDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloxDownloaderTests.swift; sourceTree = "<group>"; };
 		9F2FF8201DECB99600D4CFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -816,6 +816,7 @@
 				9F8B46421DF3B186007E094A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F8B46471DF3B186007E094A /* Build configuration list for PBXNativeTarget "VeloxDownlaoderTests" */ = {
 			isa = XCConfigurationList;
@@ -824,6 +825,7 @@
 				9F8B46441DF3B186007E094A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
