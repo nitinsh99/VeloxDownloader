@@ -29,7 +29,10 @@ It's asyncronous, fast, maintainable, highly customizable, has backgrounding cap
 
   VeloxDownloader can be installed using [CocoaPods](http://cocoadocs.org/docsets/VeloxDownloader/1.4/index.html). Simply put the following line in your PodFile and run ```pod update``` from your terminal.
   
-  ``` pod 'VeloxDownloader', :git => 'https://github.com/nitinsh99/VeloxDownloader.git' ```
+
+  
+ ``` pod 'VeloxDownloader', '~> 1.6' ```
+
   
   
 * __Importing__:
