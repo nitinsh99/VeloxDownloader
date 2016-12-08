@@ -46,13 +46,13 @@ public class VeloxDownloaderList: UIViewController,UITableViewDelegate,UITableVi
     public func downloadItemRemoved(downloadInstance: VeloxDownloadInstance) {
         
         
-        
-        print("received a callback saying that download has to be removed\(downloadInstance.filename)")
+       
         if let indexToBeRemoved  = downloadListArray.index(of: downloadInstance)
         {
+            
+            print("received a callback saying that download has to be removed\(downloadInstance.filename)")
             downloadListArray.remove(at: indexToBeRemoved)
-            VeloxDownloadManager.downloadInstanceDictionary!.removeValue(forKey: downloadInstance.filename)
-            downloadInstance.downloadStatusClosure!(true)
+            
 
         }
         DispatchQueue.main.async {
