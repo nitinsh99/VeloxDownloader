@@ -26,7 +26,8 @@ public class ViewController: UIViewController {
         self.progressBar1.progress = 0.0
         self.progressBar2.progress = 0.0
         
-        let controller = VeloxDownloaderList(nibName: "VeloxDownloaderList", bundle: nil)
+        let bundle  = Bundle(for: VeloxDownloaderList.self)
+        let controller = VeloxDownloaderList(nibName: "VeloxDownloaderList", bundle: bundle)
         self.addChildViewController(controller)
         controller.view.frame = scrollView.frame
         self.view.addSubview(controller.view)
