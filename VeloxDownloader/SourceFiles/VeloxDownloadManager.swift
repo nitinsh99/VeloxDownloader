@@ -274,6 +274,8 @@ public class VeloxDownloadManager : NSObject,URLSessionDelegate,URLSessionDownlo
             {
                 print("error occured \(error.localizedDescription)")
             }
+            VeloxDownloadManager.downloadInstanceDictionary!.removeValue(forKey: dowloadInstace!.filename)
+            dowloadInstace!.downloadStatusClosure!(true)
         }
         
         
